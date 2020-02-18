@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/slika4"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="179dp"
+        android:layout_height="262dp"
+        android:layout_margin="10dp"
+        android:outlineAmbientShadowColor="@android:color/holo_purple"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="263dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_margin="18dp"
+            android:text="Main Title"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_difficulty"
+            style="@style/spinnerItemStyle"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/Ok"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:duplicateParentState="true"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/Ok"
+            style="@style/spinnerItemStyle"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="30dp"
+            android:text="OK"
+            android:textAlignment="center" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

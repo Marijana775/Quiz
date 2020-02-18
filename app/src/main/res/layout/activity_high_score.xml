@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slika5"
+    android:padding="14dp"
+    tools:context=".HighScoreActivity">
+
+
+    <TextView
+        android:id="@+id/text_view_highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="Your HighScore : "
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/slika"
+        android:layout_width="wrap_content"
+
+        android:layout_height="265dp"
+        android:layout_below="@+id/text_view_highscore"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/highscorepicture" />
+
+    <Button
+        android:id="@+id/try_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slika"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="24dp"
+        android:text="TRY AGAIN" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/try_again"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="9dp"
+        android:text="Go to Start Menu" />
+
+
+</RelativeLayout>
